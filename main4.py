@@ -531,3 +531,6 @@ def approve_order(order_id):
             write_data(ORDERS_FILE, orders)
             break
     return redirect(url_for('admin_dashboard'))
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000, debug=False)
